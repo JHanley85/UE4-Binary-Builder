@@ -82,7 +82,7 @@ namespace UE4_Binary_Builder
                 }
 
                 BuildRocketUE.Enabled = false;
-                string CommandLineArgs = "BuildGraph -target=\"Make Installed Build Win64\" -script=Engine/Build/InstalledEngineBuild.xml -set:WithDDC=" + GetConditionalString(bWithDDC.Checked) + " -set:SignExecutables=" + GetConditionalString(bSignExecutables.Checked) + " -set:EnableSymStore=" + GetConditionalString(bEnableSymStore.Checked);                
+                string CommandLineArgs = "BuildGraph -target=\"Make Installed Build Win64\" -script=Engine/Build/InstalledEngineBuild.xml -set:WithDDC=" + GetConditionalString(bWithDDC.Checked) + " -set:SignExecutables=" + GetConditionalString(bSignExecutables.Checked)/*+ " -set:EnableSymStore=" + GetConditionalString(bEnableSymStore.Checked)*/;                
 
                 if (bHostPlatformOnly.Checked)
                 {
